@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bharat Combo — 7 Items ₹170</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #fff8f0; }
+    header { background: #ff9933; color: white; padding: 20px; text-align: center; }
+    h1 { margin: 0; font-size: 24px; }
+    .logo { width: 60px; vertical-align: middle; margin-right: 10px; }
+    .main { text-align: center; padding: 20px; }
+    .items { font-size: 20px; color: #333; margin: 10px 0; }
+    img { max-width: 300px; border-radius: 8px; margin: 10px; }
+    .review { background: #ffe0b2; padding: 10px; margin: 10px auto; max-width: 500px; border-radius: 5px; }
+    .cod { font-size: 18px; margin: 15px 0; color: green; font-weight: bold; }
+    .happy { font-size: 16px; color: #444; margin-bottom: 20px; }
+    .pincode-box { margin: 20px 0; }
+    input { padding: 10px; font-size: 16px; width: 200px; }
+    button { padding: 10px 15px; font-size: 16px; background: #ff9933; color: white; border: none; cursor: pointer; }
+    button:hover { background: #e68a00; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Emblem_of_India.svg/1200px-Emblem_of_India.svg.png" class="logo" alt="Bharat Logo" />
+    <h1>Bharat Combo — 7 Items ₹170 Only</h1>
+  </header>
+  <div class="main">
+    <div class="items">Delicious Pizzas & Refreshing Drinks!</div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Pizza_with_olive.jpg" alt="Pizza" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Cola_drink.jpg" alt="Drink" />
+    <div class="review">"Best combo ever! Worth every rupee. Highly trusted!" — Happy Customer</div>
+    <div class="cod">COD Available — Lifetime</div>
+    <div class="happy">100000+ Happy Customers</div>
+    <div class="pincode-box">
+      <input type="text" id="pincode" placeholder="Enter your PIN code" />
+      <button onclick="checkPincode()">Check</button>
+    </div>
+  </div>
+  <script>
+    function checkPincode() {
+      const pin = document.getElementById('pincode').value.trim();
+      if(pin) {
+        window.location.href = 'order.html';
+      } else {
+        alert('Please enter a valid PIN code.');
+      }
+    }
+  </script>
+</body>
+</html>
